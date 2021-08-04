@@ -11,6 +11,7 @@ export const Models = defaultModels
 
 /** @type {import("..").TypeORMAdapter} */
 export function TypeORMLegacyAdapter(configOrString, options = {}) {
+  console.log('my custom adapter!');
   // Ensure configOrString is normalized to an object
   const typeOrmConfig = adapterConfig.parseConnectionString(configOrString)
 
